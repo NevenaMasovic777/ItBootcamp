@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Login } from './layout/public/components/login/login';
+import { BrowserRouter, Switch, Redirect, Route } from 'react-router-dom';
+import { PublicRoute } from './layout/public/publicRoute';
+import { PrivateRoute } from './layout/private/privateRoute';
+import { Home } from './layout/private/components/home';
+import { Orders } from './layout/private/components/orders/orders';
+import { Polls } from './layout/private/components/polls/polls';
+import { Settings } from './layout/private/components/settings/settings';
+import { NewPoll } from './layout/private/components/polls/new-poll';
+import { PollResults } from './layout/private/components/polls/poll-results';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <Switch>
+          <PublicRoute  component={Login} path="/login" />
+          <PrivateRoute component={Home} path="/home" />
+          <Route exact path="/polls" component={Polls}></Route>
+          <Route exact path="/orders" component={Orders}></Route>
+          <Route exact path="/settings" component={Settings}></Route>
+          <Route exact path = "/newpoll" component={NewPoll}></Route>
+          <Route exact path="/results" component={PollResults}></Route>
+          <Redirect from="/" to="home" />
+        </Switch>
+      </BrowserRouter>
   );
 }
 
