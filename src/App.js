@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/settings" component={Settings}></Route>
           <Route exact path = "/newpoll" component={NewPoll}></Route>
           <Route exact path="/results" component={PollResults}></Route>
-          <Redirect from="/" to="home" />
+          <Redirect from="/" to="login" />
         </Switch>
       </BrowserRouter>
   );
