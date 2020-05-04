@@ -1,11 +1,32 @@
-.restaurant{
-    border: 1px solid salmon;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    box-shadow: 3px 3px 3px grey;
-    border-radius: 5px;
-  }
-  
-  .restaurant-select{display:flex; flex-direction:row;}
+.restaurant {
+  border: 1px solid salmon;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 5px;
+}
+
+.restaurant-list{
+  margin-top: 20px;
+}
+
+.restaurant-select {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.results{
+  text-align: center;
+}
+
+.restaurant-votes, .total{
+  border: 1px solid salmon;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 5px;
+}

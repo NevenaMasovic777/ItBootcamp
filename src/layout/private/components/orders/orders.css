@@ -1,37 +1,49 @@
-.meals-container{
-    width: 600px;
-    height: 300px;
-    margin: 30px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .restaurant-name{
-    text-align: center;
-  }
-  
-  .single-meal{
-    border: 1px solid salmon;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    box-shadow: 3px 3px 3px grey;
-    border-radius: 5px;
-  }
-  
-  .shopping-cart{
-    border: 1px solid rgb(250, 103, 86);
-    border-radius: 5px;
-    height: 200px;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-  }
-  /* orders-order */
-  
-  .table-container{
-    margin: auto;
-    width: 50%;
-  }
+.meals-container {
+  width: 600px;
+  height: 300px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.restaurant-name {
+  text-align: center;
+}
+
+.single-meal {
+  border: 1px solid salmon;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 5px;
+}
+
+.shopping-cart {
+  border: 1px solid rgb(250, 103, 86);
+  border-radius: 5px;
+  height: 250px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+/* orders-order */
+
+.table-container {
+  margin: auto;
+  width: 50%;
+}
+
+.chart {
+  text-align: center;
+  border: 1px solid rgb(250, 103, 86);
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 5px;
+  height: 200px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
