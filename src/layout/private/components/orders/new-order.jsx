@@ -36,7 +36,7 @@ export const NewOrder = () => {
               style={{ marginRight: "20px" }}
             />
             <Button variant="success" size="sm">
-              ADD
+              Add
             </Button>
           </div>
           <div className="single-meal">
@@ -58,7 +58,7 @@ export const NewOrder = () => {
               style={{ marginRight: "20px" }}
             />
             <Button variant="success" size="sm">
-              ADD
+              Add
             </Button>
           </div>
           <div className="single-meal">
@@ -80,7 +80,7 @@ export const NewOrder = () => {
               style={{ marginRight: "20px" }}
             />
             <Button variant="success" size="sm">
-              ADD
+              Add
             </Button>
           </div>
         </div>

@@ -1,11 +1,17 @@
 .restaurant {
-  border: 1px solid salmon;
+  border: 1px solid #505050;
   width: 600px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   box-shadow: 3px 3px 3px grey;
-  border-radius: 5px;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.restaurant button {
+  float: right;
+  margin: 10px 8px;
 }
 
 .restaurant-list{
@@ -22,11 +28,11 @@
 }
 
 .restaurant-votes, .total{
-  border: 1px solid salmon;
+  border: 1px solid #505050;
   width: 400px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   box-shadow: 3px 3px 3px grey;
-  border-radius: 5px;
+  border-radius: 4px;
 }

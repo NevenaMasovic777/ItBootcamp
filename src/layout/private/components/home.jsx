@@ -1,26 +1,43 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Header } from "../../public/components/header";
-import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { NewPoll } from "./polls/new-poll";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
-    <div style={{ textAlign: "center" }}>
-      <Header></Header>
+    <div>
 
-      <Navbar bg="light" variant="light">
-        <Navbar.Brand href="/home">Home</Navbar.Brand>
-        <Nav className="mr-auto">
-          <Nav.Link href="/orders">Orders</Nav.Link>
-          <Nav.Link href="/settings">Settings</Nav.Link>
-        </Nav>
-        <Link to="login">
-          <button className="btn btn-danger">LOGOUT</button>
-        </Link>
-      </Navbar>
-      <NewPoll></NewPoll>
+      <div class="grid-container">
+
+          <header class="header"></header>
+          <aside class="sidenav">
+
+              <Link to="home">
+                <img src="https://img.icons8.com/color/48/000000/kawaii-taco.png" alt="pic" class="logo" />
+              </Link>
+
+              <ul class="sidenav__list">
+                  <li class="sidenav__list-item">
+                      <Nav.Link href="/home">Home</Nav.Link>
+                  </li>
+                  <li class="sidenav__list-item">
+                      <Nav.Link href="/orders">Orders</Nav.Link>
+                  </li>
+                  <li class="sidenav__list-item">
+                      <Nav.Link href="/settings">Settings</Nav.Link>
+                  </li>
+                  <li class="sidenav__list-item">
+                      <Nav.Link href="/login">Log out</Nav.Link>
+                  </li>
+              </ul>
+          </aside>
+          <main class="main">
+              <NewPoll></NewPoll>
+          </main>
+          <footer class="footer"></footer>
+      </div>
+
     </div>
+
   );
 };

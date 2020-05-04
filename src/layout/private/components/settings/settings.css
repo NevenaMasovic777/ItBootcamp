@@ -1,9 +1,8 @@
-.settings{
-    border: 1px solid salmon;
-    border-radius: 5px;
+.settings {
+    border: 1px solid #505050;
+    border-radius: 4px;
     box-shadow: 3px 3px 3px grey;
     width: 600px;
-    height: 230px;
-    margin: 30px;
-    padding: 30px;
+    margin: auto;
+    padding: 24px;
 }

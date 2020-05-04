@@ -1,45 +1,53 @@
 import React from "react";
 import "./settings.css";
 import { Link } from "react-router-dom";
-import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { Header } from "../../../public/components/header";
 
 export const Settings = () => {
   return (
     <div>
-        <Header></Header>
-      <Navbar bg="light" variant="light">
-        <Navbar.Brand href="/home">Home</Navbar.Brand>
-        <Nav className="mr-auto">
-          <Nav.Link href="/orders">Orders</Nav.Link>
-          <Nav.Link href="/settings">Settings</Nav.Link>
-        </Nav>
-        <Link to="login">
-          <button className="btn btn-danger">LOGOUT</button>
-        </Link>
-      </Navbar>
-      {/* <div style={{ textAlign: "center" }}>
-        <Link to="home">
-          <button
-            className="btn btn-primary"
-            style={{ margin: "20px", width: "400px" }}
-          >
-            BACK TO MAIN
-          </button>
-        </Link>
-      </div> */}
-      <div className="settings">
-        <h4>Settings</h4>
-        <div>
-          <img
-            src="https://img.icons8.com/bubbles/50/000000/upload.png"
-            alt="pic"
-          />
-          <p>Upload data</p>
-        </div>
-        <button className="btn btn-primary">SAVE</button>
+
+      <div class="grid-container">
+
+          <header class="header"></header>
+          <aside class="sidenav">
+
+              <Link to="home">
+              <img src="https://img.icons8.com/color/48/000000/kawaii-taco.png" alt="pic" class="logo" />
+              </Link>
+
+              <ul class="sidenav__list">
+                  <li class="sidenav__list-item">
+                      <Nav.Link href="/home">Home</Nav.Link>
+                  </li>
+                  <li class="sidenav__list-item">
+                      <Nav.Link href="/orders">Orders</Nav.Link>
+                  </li>
+                  <li class="sidenav__list-item">
+                      <Nav.Link href="/settings">Settings</Nav.Link>
+                  </li>
+                  <li class="sidenav__list-item">
+                      <Nav.Link href="/login">Log out</Nav.Link>
+                  </li>
+              </ul>
+          </aside>
+          <main class="main">
+            <div className="settings">
+              <h4>Settings</h4>
+              <div>
+                <img
+                  src="https://img.icons8.com/bubbles/50/000000/upload.png"
+                  alt="pic"
+                />
+                <p>Upload data</p>
+              </div>
+              <button className="btn btn-primary">SAVE</button>
+            </div>
+          </main>
+          <footer class="footer"></footer>
       </div>
+
     </div>
+
   );
 };

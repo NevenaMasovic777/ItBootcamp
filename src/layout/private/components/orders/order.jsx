@@ -1,19 +1,41 @@
 import React from "react";
+import Nav from "react-bootstrap/Nav";
 import Table from "react-bootstrap/Table";
 import { Link } from "react-router-dom";
 
 export const Order = () => {
   return (
     <div>
-      <h2 style={{ margin: "30px" }}>Order ID</h2>
-      <hr />
-      <div style={{ textAlign: "center" }}>
-        <Link to="home">
-          <button className="btn btn-primary" style={{ margin: "20px", width:"400px" }}>
-            BACK TO MAIN
-          </button>
-        </Link>
-      </div>
+
+      <div class="grid-container">
+
+          <header class="header"></header>
+          <aside class="sidenav">
+
+              <Link to="home">
+                <img src="https://img.icons8.com/color/48/000000/kawaii-taco.png" alt="pic" class="logo" />
+              </Link>
+
+              <ul class="sidenav__list">
+                  <li class="sidenav__list-item">
+                      <Nav.Link href="/home">Home</Nav.Link>
+                  </li>
+                  <li class="sidenav__list-item">
+                      <Nav.Link href="/orders">Orders</Nav.Link>
+                  </li>
+                  <li class="sidenav__list-item">
+                      <Nav.Link href="/settings">Settings</Nav.Link>
+                  </li>
+                  <li class="sidenav__list-item">
+                      <Nav.Link href="/login">Log out</Nav.Link>
+                  </li>
+              </ul>
+          </aside>
+          <main class="main">
+              
+          <div>
+
+      <h2 style={{ textAlign: "center", marginTop: "24px" }}>Order ID</h2>
       <div className="restaurant-name">
         <div>
           <img
@@ -58,6 +80,21 @@ export const Order = () => {
       <div className="chart">
         <h3>Chart</h3>
       </div>
+
+      <div style={{ textAlign: "center" }}>
+        <Link to="home">
+          <button className="btn btn-primary" style={{ margin: "20px", width:"400px" }}>
+            BACK TO MAIN
+          </button>
+        </Link>
+      </div>
     </div>
+
+          </main>
+          <footer class="footer"></footer>
+      </div>
+
+    </div>
+
   );
 };

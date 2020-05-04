@@ -14,19 +14,19 @@ import { Order } from "./layout/private/components/orders/order";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <PublicRoute component={Login} path="/login" />
-        <PrivateRoute component={Home} path="/home" />
-        <Route exact path="/polls" component={Polls}></Route>
-        <Route exact path="/orders" component={Orders}></Route>
-        <Route exact path="/settings" component={Settings}></Route>
-        <Route exact path="/newpoll" component={NewPoll}></Route>
-        <Route exact path="/results" component={PollResults}></Route>
-        <Route exact path="/orderID" component={Order}></Route>
-        <Redirect from="/" to="login" />
-      </Switch>
-    </BrowserRouter>
+        <BrowserRouter>
+          <Switch>      
+            <PublicRoute component={Login} path="/login" />
+            <PrivateRoute component={Home} path="/home" />
+            <Route exact path="/polls" component={Polls}></Route>
+            <Route exact path="/orders" component={Orders}></Route>
+            <Route exact path="/settings" component={Settings}></Route>
+            <Route exact path="/newpoll" component={NewPoll}></Route>
+            <Route exact path="/results" component={PollResults}></Route>
+            <Route exact path="/orderID" component={Order}></Route>
+            <Redirect from="/" to="login" />      
+            </Switch>
+        </BrowserRouter>
   );
 }
 

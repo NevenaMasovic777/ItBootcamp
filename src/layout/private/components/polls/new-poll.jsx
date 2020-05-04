@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 
 export const NewPoll = () => {
   return (
-    <div style={{ textAlign: "center" }}>
+
+<div style={{ textAlign: "center" }}>
       <div style={{ margin: "20px" }}>
         <label htmlFor="label1"><b>Poll name</b></label>
         <div style={{display:"inline-block", marginLeft:"20px"}}>
@@ -22,7 +23,7 @@ export const NewPoll = () => {
       <div className="restaurant-select">
         <input type="text" value="search restaurant"/>
       </div>
-      <button className="btn btn-success">ADD</button>
+      <button className="btn btn-success">Search</button>
       <div className="restaurant-list">
         <h4>Added:</h4>
         <div className="restaurant">
@@ -61,5 +62,6 @@ export const NewPoll = () => {
         </Link>
       </div>
     </div>
+    
   );
 };
